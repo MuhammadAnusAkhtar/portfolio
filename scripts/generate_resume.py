@@ -16,7 +16,7 @@ from reportlab.platypus import (
 )
 
 OUTPUT_PATH = "public/resume.pdf"
-PROFILE_PHOTO_PATH = "scripts/assets/profile-picture.jpeg"
+PROFILE_PHOTO_PATH = "public/profile.jpg"
 
 DARK = HexColor("#1a1a1a")
 GRAY = HexColor("#4a4a4a")
