@@ -12,9 +12,11 @@ from reportlab.platypus import (
     Table,
     TableStyle,
     HRFlowable,
+    Image,
 )
 
 OUTPUT_PATH = "public/resume.pdf"
+PROFILE_PHOTO_PATH = "scripts/assets/profile-picture.jpeg"
 
 DARK = HexColor("#1a1a1a")
 GRAY = HexColor("#4a4a4a")
@@ -85,15 +87,30 @@ def build():
 
     story = []
 
-    # Header
-    story.append(Paragraph("Muhammad Anus Akhtar", styles["name"]))
-    story.append(Paragraph("Senior Full Stack Website &amp; Mobile App Developer", styles["title"]))
-    story.append(
+    # Header (photo + name/title/contact side by side)
+    photo = Image(PROFILE_PHOTO_PATH, width=0.95 * inch, height=0.95 * inch)
+    header_text = [
+        Paragraph("Muhammad Anus Akhtar", styles["name"]),
+        Paragraph("Senior Full Stack Website &amp; Mobile App Developer", styles["title"]),
         Paragraph(
             "anusakhtar786@gmail.com &nbsp;|&nbsp; 0343-1451403 &nbsp;|&nbsp; Pakistan",
             styles["contact"],
-        )
+        ),
+    ]
+    header_table = Table(
+        [[photo, header_text]],
+        colWidths=[1.15 * inch, 5.7 * inch],
     )
+    header_table.setStyle(
+        TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+            ("TOPPADDING", (0, 0), (-1, -1), 0),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+        ])
+    )
+    story.append(header_table)
     story.append(Spacer(1, 8))
 
     # Summary
@@ -125,7 +142,7 @@ def build():
     # Education
     story += section_header("Education")
     story.append(Paragraph("MPhil, Computer Science", styles["job_title"]))
-    story.append(Paragraph("Completed February 2026", styles["job_meta"]))
+    story.append(Paragraph("Minhaj University Lahore &nbsp;&mdash;&nbsp; Completed February 2026", styles["job_meta"]))
 
     # Skills
     story += section_header("Skills")
