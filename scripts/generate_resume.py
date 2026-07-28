@@ -204,6 +204,12 @@ def build():
             "desc": "Self-directed mobile UI/UX concept for a real estate discovery app, covering search, listings, property detail, and profile screens.",
             "link": None,
         },
+        {
+            "name": "QuickBite — UI/UX Concept",
+            "tech": "UI/UX Design, Mobile App Design",
+            "desc": "Self-directed mobile UI/UX concept for a food delivery app, covering restaurant discovery, menu browsing, cart checkout, and order tracking.",
+            "link": None,
+        },
     ]
     for p in projects:
         title = p["name"]

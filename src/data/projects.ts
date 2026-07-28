@@ -147,4 +147,28 @@ export const projects: Project[] = [
     ],
     links: {},
   },
+  {
+    slug: "quickbite-ui-concept",
+    name: "QuickBite — UI/UX Concept",
+    category: "mobile",
+    categoryLabel: "Mobile App Concept",
+    image: "/projects/quickbite-ui/quickbite-cover.png",
+    gallery: [
+      "/projects/quickbite-ui/quickbite-cover.png",
+      "/projects/quickbite-ui/quickbite-1-discover.png",
+      "/projects/quickbite-ui/quickbite-2-menu.png",
+      "/projects/quickbite-ui/quickbite-3-cart.png",
+      "/projects/quickbite-ui/quickbite-4-tracking.png",
+    ],
+    technologies: ["UI/UX Design", "Mobile App Design", "Design System"],
+    description:
+      "A self-directed mobile UI/UX concept for a food delivery app, covering restaurant discovery, menu browsing, cart checkout, and live order tracking.",
+    features: [
+      "Discover screen with categories, promos & popular restaurants nearby",
+      "Restaurant menu screen with category tabs and quick add-to-cart",
+      "Cart & checkout with delivery address and order summary",
+      "Live order tracking with delivery status timeline and rider contact",
+    ],
+    links: {},
+  },
 ];
