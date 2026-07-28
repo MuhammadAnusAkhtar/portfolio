@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Muhammad Anus Akhtar — Developer Portfolio
+
+A premium, animated portfolio built with Next.js 15, TypeScript, Tailwind CSS 4, and Framer Motion.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Editing Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Everything content-related lives in `src/data/` — edit these files to update the site, no component changes needed:
 
-## Learn More
+- `personal.ts` — name, title, bio, contact info, social links, nav links
+- `projects.ts` — portfolio projects (append to the array to add more)
+- `skills.ts` — skill categories and proficiency levels
+- `services.ts` — services offered
+- `testimonials.ts` — client testimonials
+- `experience.ts` — career timeline and stat counters
 
-To learn more about Next.js, take a look at the following resources:
+Replace the placeholder assets in `public/` (`profile.svg`, `resume.pdf`, `projects/*.svg`, `testimonials/*.svg`, `og-image.svg`) with your real photo, resume, and project screenshots. `scripts/gen-placeholders.mjs` shows how the SVG placeholders were generated if you need to regenerate them.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+  app/            # routes, layout, metadata, sitemap/robots
+  components/     # shared UI, sections/, ui/, icons/
+  data/           # site content (see above)
+  hooks/          # custom hooks (active section, count-up, mounted)
+  lib/            # utilities
+  types/          # shared TypeScript types
+```
 
-## Deploy on Vercel
+## Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · Framer Motion · Lucide Icons · next-themes

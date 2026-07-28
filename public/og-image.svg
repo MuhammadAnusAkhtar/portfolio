@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1050" cy="90" r="200" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="120" cy="560" r="220" fill="rgba(255,255,255,0.07)"/>
+  <text x="90" y="290" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="white">Muhammad Anus Akhtar</text>
+  <text x="90" y="350" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="white" opacity="0.9">Senior Full Stack Website &amp; Mobile App Developer</text>
+  <text x="90" y="400" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="white" opacity="0.75">4.5+ Years Experience — React, Next.js, Flutter</text>
+</svg>

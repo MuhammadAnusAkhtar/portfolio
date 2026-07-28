@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+  <defs>
+    <linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#0f766e'/>
+      <stop offset='100%' stop-color='#7c3aed'/>
+    </linearGradient>
+    <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='1'/>
+    </pattern>
+  </defs>
+  <rect width='1200' height='800' fill='url(#g)'/>
+  <rect width='1200' height='800' fill='url(#grid)'/>
+  <circle cx='1020' cy='140' r='180' fill='rgba(255,255,255,0.08)'/>
+  <circle cx='140' cy='700' r='220' fill='rgba(255,255,255,0.06)'/>
+  <text x='600' y='420' font-family='Arial, Helvetica, sans-serif' font-size='56' font-weight='700' fill='white' text-anchor='middle' opacity='0.95'>Mahar Hostel</text>
+  <text x='600' y='470' font-family='Arial, Helvetica, sans-serif' font-size='22' fill='white' text-anchor='middle' opacity='0.75'>Mobile App Preview Placeholder</text>
+</svg>
