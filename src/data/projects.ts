@@ -152,6 +152,7 @@ export const projects: Project[] = [
     name: "QuickBite — UI/UX Concept",
     category: "mobile",
     categoryLabel: "Mobile App Concept",
+    additionalCategories: ["ui-design"],
     image: "/projects/quickbite-ui/quickbite-cover.png",
     gallery: [
       "/projects/quickbite-ui/quickbite-cover.png",

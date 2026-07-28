@@ -12,6 +12,8 @@ export interface Project {
   name: string;
   category: ProjectCategory;
   categoryLabel: string;
+  /** Extra category tabs this project should also appear under, beyond its primary category. */
+  additionalCategories?: ProjectCategory[];
   image: string;
   /** Extra screenshots shown as a gallery in the details modal (image is always shown first). */
   gallery?: string[];

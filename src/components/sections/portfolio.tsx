@@ -26,7 +26,10 @@ export function Portfolio() {
 
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
-      const matchesCategory = activeFilter === "all" || project.category === activeFilter;
+      const matchesCategory =
+        activeFilter === "all" ||
+        project.category === activeFilter ||
+        project.additionalCategories?.includes(activeFilter);
       const matchesQuery =
         query.trim() === "" ||
         project.name.toLowerCase().includes(query.toLowerCase()) ||
