@@ -123,4 +123,28 @@ export const projects: Project[] = [
       github: "https://github.com/MuhammadAnusAkhtar/nova-ai-assistant",
     },
   },
+  {
+    slug: "estatefinder-ui-concept",
+    name: "EstateFinder — UI/UX Concept",
+    category: "ui-design",
+    categoryLabel: "UI/UX Design",
+    image: "/projects/estatefinder-ui/estatefinder-cover.png",
+    gallery: [
+      "/projects/estatefinder-ui/estatefinder-cover.png",
+      "/projects/estatefinder-ui/estatefinder-1-discover.png",
+      "/projects/estatefinder-ui/estatefinder-2-listings.png",
+      "/projects/estatefinder-ui/estatefinder-3-detail.png",
+      "/projects/estatefinder-ui/estatefinder-4-profile.png",
+    ],
+    technologies: ["UI/UX Design", "Mobile App Design", "Design System"],
+    description:
+      "A self-directed mobile UI/UX concept for a real estate discovery app, designed to explore a clean, conversion-focused property browsing experience — from search to inquiry.",
+    features: [
+      "Discover screen with search, category filters & featured property cards",
+      "Listings screen with sortable filters and a scannable card layout",
+      "Property detail screen with agent contact and a WhatsApp-first CTA",
+      "Saved properties & profile screen with at-a-glance activity stats",
+    ],
+    links: {},
+  },
 ];

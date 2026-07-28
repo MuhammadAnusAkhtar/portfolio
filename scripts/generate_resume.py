@@ -198,9 +198,18 @@ def build():
             "desc": "Local-first Windows AI assistant with wake-word voice control and a secure automation bridge to open apps and send WhatsApp messages.",
             "link": "github.com/MuhammadAnusAkhtar/nova-ai-assistant",
         },
+        {
+            "name": "EstateFinder — UI/UX Concept",
+            "tech": "UI/UX Design, Mobile App Design",
+            "desc": "Self-directed mobile UI/UX concept for a real estate discovery app, covering search, listings, property detail, and profile screens.",
+            "link": None,
+        },
     ]
     for p in projects:
-        story.append(Paragraph(f"{p['name']} &nbsp;<font color='#888888' size=8>({p['link']})</font>", styles["proj_title"]))
+        title = p["name"]
+        if p.get("link"):
+            title += f" &nbsp;<font color='#888888' size=8>({p['link']})</font>"
+        story.append(Paragraph(title, styles["proj_title"]))
         story.append(Paragraph(p["tech"], styles["proj_tech"]))
         story.append(Paragraph(p["desc"], styles["body"]))
         story.append(Spacer(1, 3))
