@@ -77,6 +77,14 @@ export const projects: Project[] = [
     category: "websites",
     categoryLabel: "Business Website",
     image: "/projects/lifetime-auto-repair.png",
+    gallery: [
+      "/projects/lifetime-auto-repair.png",
+      "/projects/lifetime-auto-repair/lar-1.png",
+      "/projects/lifetime-auto-repair/lar-2.png",
+      "/projects/lifetime-auto-repair/lar-3.png",
+      "/projects/lifetime-auto-repair/lar-4.png",
+      "/projects/lifetime-auto-repair/lar-5.png",
+    ],
     technologies: ["React", "Tailwind CSS"],
     description:
       "A business website for a premium car AC and auto repair shop in Abu Dhabi, built to showcase services and convert visitors into booked appointments.",
@@ -90,25 +98,6 @@ export const projects: Project[] = [
       live: "https://aquamarine-bombolone-25d9e2.netlify.app/",
     },
     featured: true,
-  },
-  {
-    slug: "mahar-hostel",
-    name: "Mahar Hostel",
-    category: "mobile",
-    categoryLabel: "Mobile App",
-    image: "/projects/mahar-hostel.svg",
-    technologies: ["Flutter", "Dart", "Firebase", "GetX"],
-    description:
-      "A hostel management app with separate Admin and Student portals — covering staff management, room availability, issue tracking, room-change requests, and PDF fee challan generation.",
-    features: [
-      "Dual Admin & Student portals with role-based flows",
-      "Room availability management & room-change request workflow",
-      "Issue reporting and resolution tracking with history",
-      "PDF hostel fee challan generation, backed by Firebase",
-    ],
-    links: {
-      github: "https://github.com/MuhammadAnusAkhtar/mahar-hostel-app",
-    },
   },
   {
     slug: "nova-ai-assistant",

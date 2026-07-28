@@ -132,7 +132,7 @@ def build():
     experience_bullets = [
         "Built and shipped 100+ web and mobile projects across real estate, e-commerce, and business service industries",
         "Architected scalable full-stack applications (React/Next.js + Node.js) with admin dashboards and analytics",
-        "Delivered cross-platform mobile apps using Flutter and Firebase for hostel management, AI assistants, and business use cases",
+        "Delivered cross-platform mobile and desktop apps using Flutter, Firebase, and local AI tooling for business use cases",
         "Led feature development end-to-end: API design, database architecture, and UI/UX implementation",
     ]
     for b in experience_bullets:
@@ -191,12 +191,6 @@ def build():
             "tech": "React, Tailwind CSS",
             "desc": "Business website for a car AC and auto repair shop in Abu Dhabi with service listings, testimonials, and WhatsApp booking.",
             "link": "aquamarine-bombolone-25d9e2.netlify.app",
-        },
-        {
-            "name": "Mahar Hostel",
-            "tech": "Flutter, Dart, Firebase, GetX",
-            "desc": "Hostel management app with Admin/Student portals, room-change workflow, issue tracking, and PDF fee challan generation.",
-            "link": "github.com/MuhammadAnusAkhtar/mahar-hostel-app",
         },
         {
             "name": "Nova AI Assistant",
