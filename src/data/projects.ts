@@ -178,6 +178,7 @@ export const projects: Project[] = [
     category: "mobile",
     categoryLabel: "Mobile App",
     image: "/projects/solarpanel-app/solarpanel-1-dashboard.jpg",
+    imageFit: "contain",
     gallery: [
       "/projects/solarpanel-app/solarpanel-1-dashboard.jpg",
       "/projects/solarpanel-app/solarpanel-2-load-normal.jpg",

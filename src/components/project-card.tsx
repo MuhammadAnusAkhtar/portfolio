@@ -21,12 +21,18 @@ export function ProjectCard({ project, onViewDetails }: { project: Project; onVi
       whileHover={{ y: -8 }}
       className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-xl hover:shadow-black/10"
     >
-      <div className="relative aspect-[3/2] w-full overflow-hidden">
+      <div
+        className={`relative aspect-[3/2] w-full overflow-hidden ${
+          project.imageFit === "contain" ? "bg-black" : ""
+        }`}
+      >
         <Image
           src={project.image}
           alt={project.name}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className={`transition-transform duration-500 group-hover:scale-105 ${
+            project.imageFit === "contain" ? "object-contain" : "object-cover"
+          }`}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">

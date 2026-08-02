@@ -85,7 +85,7 @@ export function ProjectModal({
                     src={images[index]}
                     alt={`${project.name} screenshot ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className={project.imageFit === "contain" ? "object-contain" : "object-cover"}
                   />
                 </motion.div>
               </AnimatePresence>

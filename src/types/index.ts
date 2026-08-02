@@ -17,6 +17,8 @@ export interface Project {
   image: string;
   /** Extra screenshots shown as a gallery in the details modal (image is always shown first). */
   gallery?: string[];
+  /** Use "contain" for portrait/phone screenshots that shouldn't be cropped to fill the frame. Defaults to "cover". */
+  imageFit?: "cover" | "contain";
   technologies: string[];
   description: string;
   features: string[];
