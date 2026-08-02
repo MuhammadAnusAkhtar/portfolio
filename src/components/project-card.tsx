@@ -23,7 +23,11 @@ export function ProjectCard({ project, onViewDetails }: { project: Project; onVi
     >
       <div
         className={`relative aspect-[3/2] w-full overflow-hidden ${
-          project.imageFit === "contain" ? "bg-black" : ""
+          project.imageFit === "contain"
+            ? project.imageBg === "black"
+              ? "bg-black"
+              : "bg-muted"
+            : ""
         }`}
       >
         <Image

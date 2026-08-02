@@ -17,8 +17,10 @@ export interface Project {
   image: string;
   /** Extra screenshots shown as a gallery in the details modal (image is always shown first). */
   gallery?: string[];
-  /** Use "contain" for portrait/phone screenshots that shouldn't be cropped to fill the frame. Defaults to "cover". */
+  /** Use "contain" for screenshots whose aspect ratio doesn't match the card/modal frame, so nothing gets cropped off. Defaults to "cover". */
   imageFit?: "cover" | "contain";
+  /** Letterbox fill color behind a "contain" image. Defaults to "muted"; use "black" for dark-UI phone screenshots. */
+  imageBg?: "muted" | "black";
   technologies: string[];
   description: string;
   features: string[];

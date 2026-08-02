@@ -11,6 +11,7 @@ export const projects: Project[] = [
     category: "websites",
     categoryLabel: "Real Estate Platform",
     image: "/projects/deal-one-real-estate.png",
+    imageFit: "contain",
     gallery: [
       "/projects/deal-one-real-estate.png",
       "/projects/deal-one-real-estate/dore-2.png",
@@ -42,6 +43,7 @@ export const projects: Project[] = [
     category: "websites",
     categoryLabel: "E-Commerce Website",
     image: "/projects/shopit/shopit-2.png",
+    imageFit: "contain",
     gallery: [
       "/projects/shopit/shopit-2.png",
       "/projects/shopit/shopit-4.png",
@@ -77,6 +79,7 @@ export const projects: Project[] = [
     category: "websites",
     categoryLabel: "Business Website",
     image: "/projects/lifetime-auto-repair.png",
+    imageFit: "contain",
     gallery: [
       "/projects/lifetime-auto-repair.png",
       "/projects/lifetime-auto-repair/lar-1.png",
@@ -179,6 +182,7 @@ export const projects: Project[] = [
     categoryLabel: "Mobile App",
     image: "/projects/solarpanel-app/solarpanel-1-dashboard.jpg",
     imageFit: "contain",
+    imageBg: "black",
     gallery: [
       "/projects/solarpanel-app/solarpanel-1-dashboard.jpg",
       "/projects/solarpanel-app/solarpanel-2-load-normal.jpg",

@@ -71,7 +71,11 @@ export function ProjectModal({
               <X className="h-5 w-5" />
             </button>
 
-            <div className="group/gallery relative aspect-video w-full overflow-hidden bg-muted">
+            <div
+              className={`group/gallery relative aspect-video w-full overflow-hidden ${
+                project.imageBg === "black" ? "bg-black" : "bg-muted"
+              }`}
+            >
               <AnimatePresence mode="wait" initial={false}>
                 <motion.div
                   key={index}
