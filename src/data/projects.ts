@@ -122,9 +122,7 @@ export const projects: Project[] = [
       "Token-authenticated, localhost-only Python automation bridge (FastAPI) — seen here opening Notepad on command",
       "Persistent conversation history with markdown-rendered responses",
     ],
-    links: {
-      github: "https://github.com/MuhammadAnusAkhtar/nova-ai-assistant",
-    },
+    links: {},
   },
   {
     slug: "estatefinder-ui-concept",
