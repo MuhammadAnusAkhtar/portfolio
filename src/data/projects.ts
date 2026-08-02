@@ -172,4 +172,32 @@ export const projects: Project[] = [
     ],
     links: {},
   },
+  {
+    slug: "solarpanel-app",
+    name: "SolarPanel App",
+    category: "mobile",
+    categoryLabel: "Mobile App",
+    image: "/projects/solarpanel-app/solarpanel-1-dashboard.jpg",
+    gallery: [
+      "/projects/solarpanel-app/solarpanel-1-dashboard.jpg",
+      "/projects/solarpanel-app/solarpanel-2-load-normal.jpg",
+      "/projects/solarpanel-app/solarpanel-3-load-heavy.jpg",
+      "/projects/solarpanel-app/solarpanel-4-control-1.jpg",
+      "/projects/solarpanel-app/solarpanel-5-control-2.jpg",
+      "/projects/solarpanel-app/solarpanel-6-paired-devices.jpg",
+      "/projects/solarpanel-app/solarpanel-7-time-settings.jpg",
+    ],
+    technologies: ["Android", "Bluetooth Low Energy"],
+    description:
+      "An Android app for monitoring and controlling a solar energy management system over Bluetooth — reading live sunlight/load status from a paired device and switching breakers on demand.",
+    features: [
+      "Live dashboard with sunlight status and breaker on/off state",
+      "Load settings with configurable schedules and load-percentage presets",
+      "Per-breaker control with Auto/Manual, Timer & Sunlight modes",
+      "Bluetooth device pairing and device time sync",
+    ],
+    links: {
+      apk: "/apks/solarpanel-app.apk",
+    },
+  },
 ];
